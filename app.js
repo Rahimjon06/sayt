@@ -180,3 +180,15 @@ const products = [
     });
   }
   
+
+  const btn = document.querySelector('.btn')
+
+  btn.addEventListener('click', () => {
+    const btnBody = document.getElementById('btnBody')
+
+    btnBody.style.opacity = '0%'
+
+    setTimeout(() => {
+      btnBody.style.display = 'none'
+    }, 1000);
+  }) 
